@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="stylesheet" href="./css/start.css">
+    <script src="./js/start.js" defer></script>
+</head>
+<body>
+    <nav>
+        <h1 >Collect the disco ball</h1>
+        <h1>Ready to pay</h1>
+        <a onclick="readInfo()" id="play" href="./sammelspiel.html">Playyy</a>
+        <h2 onclick="clicked()">Play Music</h2>
+        <h2 onclick="pause()">Pause Music</h2>
+    </nav>
+
+    <div id="all">
+        <img src="./img/aesthetic-gray-sea-photo-vag6wuuv5z8znzfq.jpg" alt="">
+        <header>
+            <h1>Anleitung</h1>
+            <p>Das Spiel funktioniert so indem man in einer bestimmten 
+                Zeit so viel wie möglich Discokugeln einsammelt, 
+                pro Kugel ein Punkt. Nachdem die Zeit abgelaufen 
+                ist erhältst du deinen Score. Die Steuerung funktioniert 
+                mit WASD und mit den Pfeiltasten. Du kannst das Spiel 
+                beenden und ein neues starten. Und vielleicht ist 
+                dieser Score ja dein nächster Highscore ;) Viel Spass beim spielen!</p>
+        </header>
+    </div>
+
+
+    <h1 id="h1">Choose Gamemode</h1>
+    <div id="gameModes">
+        
+        <div onclick="Sek2()" class="box" id="Sekunden1">
+            <h1  >20 Sekunden</h1>
+        </div>
+        <div onclick="Sek4()" class="box" id="Sekunden2">
+            <h1  >40 Sekunden</h1>
+        </div>
+        <div onclick="Min()" class="box" id="Sekunden3">
+            <h1  >1 Minute</h1>
+        </div>
+    </div>
+
+    <div id="getName">
+        <div id="LOGIN">
+            <h2>Log in</h2>
+        </div>
+        <div>
+            <div id="vorname">
+                <input type="text" name="vorname" id="vN" placeholder="Firstname">
+            </div>
+
+            <p>or</p>
+    
+            <div id="username">
+                <input type="text" name="username" id="uN" placeholder="Username">
+            </div>
+    
+            <div id="submit">
+                <input onclick="saveInfo()" type="submit" name="submit" id="submit2" value="Ready">
+            </div>
+
+            <div id="output"></div>
+        </div>
+
+    </div>
+
+    <!-- <div onclick="showList()" id="liste"><h1>Reload List</h1></div> -->
+    <h1 id="reload" onclick="showList()">Reload List</h1>
+
+    <div id="Highscores">
+        <div id="Highscore-20Sek">
+            <h1>Highscore 20 Sek</h1>
+            <div id="Sek20">
+
+            </div>
+        </div>
+    
+        <!-- <h1>Highscore 40 Sek</h1> -->
+    
+        <div id="Highscore-40Sek">
+            <h1>Highscore 40 Sek</h1>
+            <div id="Sek40">
+
+            </div>
+        </div>
+    
+        <!-- <h1>Highscore 60 Sek</h1> -->
+    
+        <div id="Highscore-60Sek">
+            <h1>Highscore 60 Sek</h1>
+            <div id="Sek60">
+
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div id="stickman">
+        <img src="./img/stick.png" alt="">
+    </div>
+
+    <div id="stickman2">
+        <img src="./img/stick2.png" alt="">
+    </div>
+
+        <div id="footer">
+            <p>Vejmelek Viktoria</p>
+            <p>2024</p>
+            <p>Sammelspiel Stickman</p>
+        </div>
+    
+</body>
+</html>

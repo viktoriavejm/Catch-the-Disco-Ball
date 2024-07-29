@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D - Sammelspiel</title>
+    <script src="./js/sammelspiel.js" defer></script>
+    <link rel="stylesheet" href="./css/sammelspiel.css">
+</head>
+<body>
+    
+
+    <div id="info" onclick="showInfoAgain()">INFO</div>
+    <!-- <div id="showedInfo"></div> -->
+    <div style="display: none;" id="dashboard">
+        <div style="display: none;" id="startButton" onclick="startGame()">NEUES SPIEL</div>
+        <div style="display: none;" id="stopGame" onclick="stop()">Restart Game</div>
+        <a id="change" href="./startseite.html">Change Gamemode</a>
+	</div>
+    
+    <div id="surface">
+        <div style="display: none;" id="countdown"></div>
+    	<div id="player">
+    		<img id="spriteImg" src = "./img/stickman-removebg.png" alt="sprite"/>
+    	</div>
+
+        <div style="display: none;" id="random">
+            <img id="bildSammel" src="./img/sammel.png" alt="">
+        </div>
+    </div>
+
+    <div style="display: none;" id="INFO"></div>
+    <!-- <div id="Oke" onclick="OK()">OK</div> -->
+    <div style="display: none;" id="winn"></div>
+
+   
+
+    <div style="display: none;" id="debug_output"></div>
+</body>
+</html>

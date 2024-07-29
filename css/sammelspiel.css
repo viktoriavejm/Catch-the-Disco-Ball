@@ -1,0 +1,206 @@
+@font-face {
+    font-family: robber;
+    src: url(../font/Pong-Game.ttf);
+}
+
+
+/* General styling */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: robber;
+    color: #fff;
+    background: #474444;
+    background: radial-gradient(circle, #555 0%, #868282 100%);  
+    background-image: url(../img/glas.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#info{
+  background-color: #555;
+  position: absolute;
+  left: 0;
+  top: 3%;
+  padding: 2%;
+  font-size: 1.7em;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  letter-spacing: 3px;
+}
+
+#info:hover{
+  cursor: pointer;
+  background-color: #ffffff6d;
+  scale: 1.01;
+}
+   
+  /* dashboard outputs */
+  #dashboard {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    width: 70%;
+    margin-left: 12% ;
+    padding: 1.5em 0;
+    letter-spacing: 2px;
+  }
+  #change{
+    color: #fff;
+    background-color: #525151;
+    border: 3px solid rgb(95, 91, 91);
+    padding: 3% ;
+    text-align: center;
+    margin-left: 28%;
+    transition: all 0.5s ease-in-out;
+
+    text-decoration: none;
+  }
+
+  #change:hover{
+    cursor: pointer;
+    background-color: #111;
+    scale: 0.99;
+    border-radius: 10px;
+  }
+
+  #startButton {
+    color: #fff;
+    background-color: #525151;
+    border: 3px solid rgb(95, 91, 91);
+    padding: 2%;
+    text-align: center;
+    margin-left: 28%;
+    transition: all 0.5s ease-in-out;
+  }
+  #startButton:hover {
+    cursor: pointer;
+    background-color: #111;
+    scale: 0.99;
+    border-radius: 10px;
+  }
+  #debug_output {
+    color: #fff;
+    background-color: #222;
+    border: 3px solid rgb(95, 91, 91);
+    padding: 0.5em;
+    margin-top: 10%;
+    width: 40%;
+    margin-left: 28%;
+  }
+  
+  /* Sprite game surface */
+  #surface {
+    background-color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    height: 400px;
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+    transform-origin: top;
+    border-radius: 20px;
+  
+  }
+  #player {
+    position: absolute;
+    width: 38px; /* viewing window */
+    height: 50px; /* viewing window */
+    overflow: hidden;
+    opacity: 0; /* hide till start */
+  }
+
+  #random{
+    position: absolute;
+    width: 3vw;
+    /* height: 50px;  */
+    overflow: hidden;
+    opacity: 0; /* hide till start */
+  }
+
+  #random img{
+    width: 100%;
+  }
+
+  #spriteImg {
+    height: 1565px;
+    bottom: 21px; /* which row of sprite */
+    position: relative;
+  }
+
+  #INFO{
+    width: 30%;
+    color: #000;
+    position: absolute;
+    /* margin-left: 35%;
+    margin-right: 35%; */
+    margin: 40%;
+    top: -66%;
+    background-color: #ffffff;
+    padding: 2%;
+    border-radius: 20px;
+    font-size: 1.4em;
+    left: -6%;
+    letter-spacing: 2px;
+
+    z-index: 50;
+    border: 2px black solid;
+
+  }
+
+  #Oke{
+    transition: all, 0.5s ease-in-out;
+  }
+
+  #Oke:hover{
+    cursor: pointer;
+    color: rgb(173, 0, 0);
+    scale: 0.99 ;
+  }
+
+  #stopGame{
+    color: #fff;
+    background-color: #525151;
+    border: 3px solid rgb(95, 91, 91);
+    padding: 2% ;
+    text-align: center;
+    margin-left: 28%;
+    transition: all 0.5s ease-in-out;
+  }
+  #stopGame:hover {
+    cursor: pointer;
+    background-color: #111;
+    scale: 0.99;
+    border-radius: 10px;
+  }
+
+  #score{
+    color: #fff;
+    background-color: #222;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 0.5em;
+    text-align: center;
+    margin-left: 28%;
+    /* transition: all 0.5s ease-in-out; */
+  }
+
+  #countdown{
+    padding: 1%;
+    background-color: #504c4c9e;
+    color: black;
+    font-size: 2em;
+  }
+  
+  #winn{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    background-color: #555656d0;
+    padding: 5%;
+    border-radius: 20px;
+    font-size: 2em;
+  }
+
+ 

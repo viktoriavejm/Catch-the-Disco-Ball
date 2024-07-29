@@ -1,0 +1,12 @@
+@font-face {
+    font-family: cat;
+    src: url(../font/Catbrother.ttf);
+}
+
+body{
+    font-family: cat;
+}
+
+#leaderBoard-Content{
+    
+}
